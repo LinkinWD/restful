@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show comment</title>
+</head>
+<body>
+    <h1>Comment id: <%= etsi.id %></h1>
+    <h2><%= etsi.comment %></h2>
+    <p><b><%= etsi.username %></b></p>
+    <br>
+    <a href="/comments">Takaisin kommenteihin</a>
+    <a href="/comments/<%=etsi.id%>/edit">editoi kommenttia</a>
+    <form method="POST" action="/comments/<%=etsi.id%>/?_method=DELETE">
+    <button>Poista viesti</button>
+</form>
+
+</body>
+</html>

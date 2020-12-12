@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit comment</title>
+</head>
+<body>
+    <h1>Editointi</h1>
+    <form method="POST" action="/comments/<%=etsi.id%>/?_method=PATCH">
+    <textarea name="comment" id="" cols="30" rows="5">
+        <%= etsi.comment %>
+    </textarea><br>
+    <button>Tallenna</button>
+</form>
+</body>
+</html>
